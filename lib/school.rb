@@ -20,8 +20,7 @@ class School
   end
 
   def sort
-    @roster.keys.sort
-    @roster.values.sort
+    @roster.sort_by { |grade, students| students }
   end
 
 end
